@@ -31,6 +31,10 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+
+import DevIcon from "devicon-react-svg";
 
 const useStyles = makeStyles(styles);
 
@@ -44,18 +48,47 @@ export default function ProfilePage(props) {
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
+
+
     <div>
-      <Header
-        color="transparent"
-        brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 200,
-          color: "white"
-        }}
-        {...rest}
-      />
+        <Header
+            brand="ヘッダーです"
+            color="info"
+            rightLinks={
+                <List className={classes.list}>
+                    <ListItem className={classes.listItem}>
+                        <Button
+                            href="#pablo"
+                            className={classes.navLink + " " + classes.navLinkActive}
+                            onClick={e => e.preventDefault()}
+                            color="transparent"
+                        >
+                            Discover
+                        </Button>
+                    </ListItem>
+                    <ListItem className={classes.listItem}>
+                        <Button
+                            href="#pablo"
+                            className={classes.navLink}
+                            onClick={e => e.preventDefault()}
+                            color="transparent"
+                        >
+                            Profile
+                        </Button>
+                    </ListItem>
+                    <ListItem className={classes.listItem}>
+                        <Button
+                            href="#pablo"
+                            className={classes.navLink}
+                            onClick={e => e.preventDefault()}
+                            color="transparent"
+                        >
+                            Settings
+                        </Button>
+                    </ListItem>
+                </List>
+            }
+        />
       <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
@@ -67,8 +100,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>Manakoです</h3>
+                    <h6>Engneer見習い</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -84,47 +117,49 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+                A novice Web-engineer working at hokan.Inc from January 2020, learning both front and back-end of the Saas product.{" "}
               </p>
             </div>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+                  <link rel="stylesheet"
+                        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></link>
+                  <link rel="stylesheet"
+                        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></link>
+                  <link rel="stylesheet"
+                        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></link>
+                  <link rel="stylesheet"
+                        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></link>
+                  <link rel="stylesheet"
+                        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></link>
+                  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></link>
                 <NavPills
                   alignCenter
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Studio",
+                      tabButton: "",
                       tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio2}
-                              className={navImageClasses}
-                            />
+                              <i style={{fontSize: '100px'}} className={"devicon-mysql-plain-wordmark colored"}></i>
+                              <i style={{fontSize: '100px'}} className={"devicon-python-plain-wordmark colored"}></i>
+                              {/*<i style={{fontSize: '150px'}} className="devicon-react-original-wordmark colored"></i>*/}
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio4}
-                              className={navImageClasses}
-                            />
+                              <i style={{fontSize: '100px'}} className={"devicon-docker-plain-wordmark colored"}></i>
+                              <i style={{fontSize: '100px'}} className={"devicon-git-plain-wordmark colored"}></i>
+                              <i style={{fontSize: '100px'}} className="devicon-html5-plain-wordmark colored"></i>
+                              <i style={{fontSize: '100px'}} className="devicon-django-plain colored"></i>
                           </GridItem>
+                            {/*<GridItem xs={12} sm={12} md={4}>*/}
+                            {/*    */}
+                            {/*    */}
+                            {/*</GridItem>*/}
+                            {/*<GridItem xs={12} sm={12} md={4}>*/}
+                            {/*    */}
+                            {/*</GridItem>*/}
                         </GridContainer>
                       )
                     },
@@ -171,33 +206,13 @@ export default function ProfilePage(props) {
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
+                              <i className=" fab fa-react fa-8x" />
+                              <i className=" fab fa-js-square fa-8x" />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
+                              <i className=" fab fa-html5 fa-9x" />
+                              <i className=" fab fa-python fa-9x" />
+
                           </GridItem>
                         </GridContainer>
                       )
@@ -205,7 +220,32 @@ export default function ProfilePage(props) {
                   ]}
                 />
               </GridItem>
+
+
             </GridContainer>
+              <div className={classes.section}>
+              <div className={classes.container}>
+                  <GridContainer justify="center">
+                      <GridItem xs={12} sm={12} md={8}>
+                          <h2>ポエム</h2>
+                          <h4>
+                              ポエムを書く場所
+                          </h4>
+                      </GridItem>
+                  </GridContainer>
+              </div>
+          </div>
+              <div className={classes.textCenter + " " + classes.sharingArea}>
+                  <GridContainer justify="center">
+                      <h3> Social Media </h3>
+                  </GridContainer>
+                  <Button color="twitter">
+                      <i className={classes.socials + " fab fa-twitter"} /> 0aksinmarathon
+                  </Button>
+                  <Button color="github">
+                      <i className={classes.socials + " fab fa-github"} /> 0aksinmarathon
+                  </Button>
+              </div>
           </div>
         </div>
       </div>

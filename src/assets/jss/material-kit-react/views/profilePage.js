@@ -3,7 +3,6 @@ import { container, title } from "assets/jss/material-kit-react.js";
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
 const profilePageStyle = {
-  container,
   profile: {
     textAlign: "center",
     "& img": {
@@ -56,6 +55,16 @@ const profilePageStyle = {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center"
+  },
+  textCenter: {
+    textAlign: "center"
+  },
+  section: {
+    padding: "70px 0"
+  },
+  container: {
+    ...container,
+    textAlign: "center !important"
   }
 };
 
