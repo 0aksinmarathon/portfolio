@@ -20,22 +20,10 @@ import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/profile_manako.png";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
-
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
-import DevIcon from "devicon-react-svg";
 
 import { Icon, InlineIcon } from "@iconify/react";
 import badmintonIcon from "@iconify/icons-mdi/badminton";
@@ -52,6 +40,7 @@ import InfoArea from "../../components/InfoArea/InfoArea.js";
 
 import SectionPillsVertical1 from "./SectionPillsVertical1.js";
 import Experiences from "./experiences.js";
+import Hobbies from "./hobbies.js";
 
 import CustomLinearProgress from "../../components/CustomLinearProgress/CustomLinearProgress.js";
 
@@ -83,8 +72,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Manakoです</h3>
-                    <h6>Engineer見習い</h6>
+                    <h3 className={classes.title}>Manako Shintaro</h3>
+                    <h6>Novice Engineer</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -107,50 +96,7 @@ export default function ProfilePage(props) {
 
             <Experiences/>
 
-            <div className={classes.section}>
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={8}>
-                  <h2 className={classes.title}>Some Talk</h2>
-                  <h5 className={classes.description}>
-                    Some friends of mine tell me that it seems like I{"'"}m not
-                    interested in anything but that{"'"}s not true at all. I am
-                    interested in so many things that the opposite seems to be
-                    true. Following is, not every but a part of my interests.
-                  </h5>
-                </GridItem>
-              </GridContainer>
-              <div>
-                <GridContainer>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Badminton"
-                      description="バドミントンはいいぞ"
-                      icon={badmintonIcon1}
-                      iconColor="info"
-                      vertical
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Piano"
-                      description="下手だけど弾けます"
-                      icon={StraightenIcon}
-                      iconColor="success"
-                      vertical
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Reading"
-                      description="読書も良い、心を豊かにしてくれる"
-                      icon={ImportContactsIcon}
-                      iconColor="danger"
-                      vertical
-                    />
-                  </GridItem>
-                </GridContainer>
-              </div>
-            </div>
+            <Hobbies />
             <SectionPillsVertical1 />
             <div className={classes.section}>
               <div className={classes.container}>
