@@ -18,7 +18,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/profile_manakoのコピー.png";
+import profile from "assets/img/profile_manako.png";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -51,6 +51,7 @@ import Timeline from "../../components/timeline.jsx";
 import InfoArea from "../../components/InfoArea/InfoArea.js";
 
 import SectionPillsVertical1 from "./SectionPillsVertical1.js";
+import Experiences from "./experiences.js";
 
 import CustomLinearProgress from "../../components/CustomLinearProgress/CustomLinearProgress.js";
 
@@ -103,200 +104,9 @@ export default function ProfilePage(props) {
                 learning both front and back-end of the Saas product.{" "}
               </p>
             </div>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8}>
-                <h2 className={classes.title}>Experience</h2>
-              </GridItem>
-            </GridContainer>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                ></link>
 
-                <NavPills
-                  alignCenter
-                  color="primary"
-                  tabs={[
-                    {
-                      tabButton: "Languages/Frameworks",
-                      tabIcon: Favorite,
-                      tabContent: (
-                        <GridContainer
-                          justify="space-around"
-                          alignContent={""}
-                          wrap={"wrap"}
-                        >
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "150px" }}
-                              className={"devicon-mysql-plain-wordmark colored"}
-                            ></i>
-                            <CustomLinearProgress
-                              variant="determinate"
-                              color="info"
-                              value={60}
-                            />
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "150px" }}
-                              className={
-                                "devicon-python-plain-wordmark colored"
-                              }
-                            ></i>
-                            <CustomLinearProgress
-                              variant="determinate"
-                              color="info"
-                              value={60}
-                            />
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "150px" }}
-                              className="devicon-react-original-wordmark colored"
-                            ></i>
-                            <CustomLinearProgress
-                              variant="determinate"
-                              color="info"
-                              value={60}
-                            />
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "150px" }}
-                              className="devicon-javascript-plain colored"
-                            ></i>
-                            <CustomLinearProgress
-                              variant="determinate"
-                              color="info"
-                              value={60}
-                            />
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "150px" }}
-                              className="devicon-html5-plain-wordmark colored"
-                            ></i>
-                            <CustomLinearProgress
-                              variant="determinate"
-                              color="info"
-                              value={60}
-                            />
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "150px" }}
-                              className="devicon-django-plain colored"
-                            ></i>
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "150px" }}
-                              className="devicon-go-line colored"
-                            ></i>
-                            <Grid px={"5"}>
-                              <CustomLinearProgress
-                                variant="determinate"
-                                color="info"
-                                value={60}
-                              />
-                            </Grid>
-                          </div>
-                        </GridContainer>
-                      )
-                    },
-                    {
-                      tabButton: "DevTools",
-                      tabIcon: Palette,
-                      tabContent: (
-                        <GridContainer justify="space-around" wrap={"wrap"}>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "220px" }}
-                              className="devicon-github-plain-wordmark colored"
-                            ></i>
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "220px" }}
-                              className="devicon-webstorm-plain-wordmark colored"
-                            ></i>
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "220px" }}
-                              className="devicon-chrome-plain-wordmark colored"
-                            ></i>
-                          </div>
-                          <div style={{ padding: 10 }}>
-                            <i
-                              style={{ fontSize: "150px" }}
-                              className={
-                                "devicon-docker-plain-wordmark colored"
-                              }
-                            ></i>
-                          </div>
-                        </GridContainer>
-                      )
-                    },
-                    {
-                      tabButton: "OS",
-                      tabIcon: Camera,
-                      tabContent: (
-                        <GridContainer justify="space-around" wrap={"wrap"}>
-                          <i
-                            style={{ fontSize: "250px" }}
-                            className="devicon-apple-original colored"
-                          ></i>
-                        </GridContainer>
-                      )
-                    }
-                  ]}
-                />
-              </GridItem>
-            </GridContainer>
+            <Experiences/>
+
             <div className={classes.section}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
