@@ -3,7 +3,6 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/grid";
 // @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
@@ -42,7 +41,6 @@ import SectionPillsVertical1 from "./SectionPillsVertical1.js";
 import Experiences from "./experiences.js";
 import Hobbies from "./hobbies.js";
 
-import CustomLinearProgress from "../../components/CustomLinearProgress/CustomLinearProgress.js";
 
 const useStyles = makeStyles(styles);
 
