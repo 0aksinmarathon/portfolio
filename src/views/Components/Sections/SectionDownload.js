@@ -87,7 +87,7 @@ export default function SectionDownload() {
             <h3>Thank you for supporting us!</h3>
           </GridContainer>
           <Button color="twitter">
-            <i className={classes.socials + " fab fa-twitter"} /> Tweet
+            <i className={classes.socials + " fab fa-twitter"} /> Tweetscsads
           </Button>
           <Button color="facebook">
             <i className={classes.socials + " fab fa-facebook-square"} /> Share
