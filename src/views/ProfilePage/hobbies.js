@@ -79,7 +79,7 @@ export default function Hobbies() {
             <InfoArea
               title="Camera"
               description="Taking picture is nice. It gets me relaxed and excited at the same time. 
-              It gives me motivation, the reason and bravery to get myself out of my room. It provide me with the conversation topic
+              It gives me motivation, the reason and bravery to get myself out of my room. It provides me with the conversation topic
               when I talk with my friends or colleagues. It is not always necessary to upload photos on social networks. It works as my memory preservative. 
               It is often enough to see those photos, grinning, looking back the joyful time I spent in the past. 
               Taking picture is similar to solving optimization problems where you find the solution under some restrictions.     

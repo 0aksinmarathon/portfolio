@@ -39,11 +39,10 @@ import Timeline from "../../components/timeline.jsx";
 
 import InfoArea from "../../components/InfoArea/InfoArea.js";
 
-import SectionPillsVertical1 from "./SectionPillsVertical1.js";
+import Education from "./Education.js";
 import Experiences from "./experiences.js";
 import Hobbies from "./hobbies.js";
-
-
+import CarouselSection from "./CarouselSection.js";
 
 
 const useStyles = makeStyles(styles);
@@ -91,16 +90,18 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                A novice Web-engineer working at hokan.Inc from January 2020,
+                A novice Web-engineer working at hokan.Inc from Jan. 2020,
                 learning both front and back-end of the Saas product.{" "}
               </p>
             </div>
 
             <Experiences/>
 
-            <SectionPillsVertical1 />
+            <Education />
 
             <Hobbies />
+
+            <CarouselSection/>
             
             {/* <div className={classes.section}>
               <div className={classes.container}>
