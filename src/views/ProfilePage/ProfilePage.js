@@ -8,6 +8,8 @@ import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
+
+import { Grid } from '@material-ui/core';
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import Button from "components/CustomButtons/Button.js";
@@ -40,6 +42,8 @@ import InfoArea from "../../components/InfoArea/InfoArea.js";
 import SectionPillsVertical1 from "./SectionPillsVertical1.js";
 import Experiences from "./experiences.js";
 import Hobbies from "./hobbies.js";
+
+
 
 
 const useStyles = makeStyles(styles);
@@ -94,9 +98,11 @@ export default function ProfilePage(props) {
 
             <Experiences/>
 
-            <Hobbies />
             <SectionPillsVertical1 />
-            <div className={classes.section}>
+
+            <Hobbies />
+            
+            {/* <div className={classes.section}>
               <div className={classes.container}>
                 <GridContainer justify="center">
                   <GridItem xs={12} sm={12} md={8}>
@@ -105,19 +111,25 @@ export default function ProfilePage(props) {
                   </GridItem>
                 </GridContainer>
               </div>
-            </div>
+            </div> */}
             <div className={classes.textCenter + " " + classes.sharingArea}>
-              <GridContainer justify="center">
-                <h3> Social Media </h3>
-              </GridContainer>
-              <Button color="twitter">
+              <Grid justify="center" mb={30}>
+                <Grid>
+                <h3> Contact </h3>
+                </Grid>
+                <Grid>
+                <h5>shintaro.manako@gmail.com</h5>
+                </Grid>
+              </Grid>
+              
+              {/* <Button color="twitter">
                 <i className={classes.socials + " fab fa-twitter"} />{" "}
                 0aksinmarathon
               </Button>
               <Button color="github">
                 <i className={classes.socials + " fab fa-github"} />{" "}
                 0aksinmarathon
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
