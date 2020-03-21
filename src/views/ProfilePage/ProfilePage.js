@@ -75,14 +75,11 @@ export default function ProfilePage(props) {
                   <div className={classes.name}>
                     <h3 className={classes.title}>Manako Shintaro</h3>
                     <h6>Novice Engineer</h6>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
+                    <Button justIcon link className={classes.margin5} href="https://github.com/0aksinmarathon" target="_blank">
+                      <i className={"fab fa-github"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button justIcon link className={classes.margin5} href="https://instagram.com/oaksinmarathon" target="_blank">
                       <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
                     </Button>
                   </div>
                 </div>
