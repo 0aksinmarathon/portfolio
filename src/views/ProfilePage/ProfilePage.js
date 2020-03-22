@@ -81,6 +81,9 @@ export default function ProfilePage(props) {
                     <Button justIcon link className={classes.margin5} href="https://instagram.com/oaksinmarathon" target="_blank">
                       <i className={"fab fa-instagram"} />
                     </Button>
+                    <Button justIcon link className={classes.margin5} href="https://be.linkedin.com/in/shintaro-manako-11197b128" target="_blank">
+                      <i className={"fab fa-linkedin"} />
+                    </Button>
                   </div>
                 </div>
               </GridItem>
