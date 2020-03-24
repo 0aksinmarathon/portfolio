@@ -14,6 +14,10 @@ import NavPills from "components/NavPills/NavPills.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
 
+import EqualizerIcon from "@material-ui/icons/Equalizer";
+import FunctionsIcon from "@material-ui/icons/Functions";
+import TranslateIcon from "@material-ui/icons/Translate";
+
 const useStyles = makeStyles(styles);
 
 export default function SectionPillsVertical1() {
@@ -25,13 +29,8 @@ export default function SectionPillsVertical1() {
           <div className={classes.title}>
             <h2 className={classes.title}>Education</h2>
           </div>
-          <div className={classes.title}>
-            <h3>
-              <small>With Icons</small>
-            </h3>
-          </div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={12} lg={6}>
+            <GridItem xs={12} sm={12} md={12} lg={12}>
               <NavPills
                 color="rose"
                 horizontal={{
@@ -40,75 +39,89 @@ export default function SectionPillsVertical1() {
                 }}
                 tabs={[
                   {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
+                    tabButton: "Highschool",
+                    tabIcon: TranslateIcon,
                     tabContent: (
                       <span>
+                        <h3>International Christian University Highschool </h3>
+                        2009.04 ~ 2012.03
+                        <h4> </h4>
                         <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
+                          This school is a quite unique environment in Japan. It
+                          is technically a normal school but about 70% of whole
+                          students are returnees from other countries. There
+                          were only two school rules. Do not come to school in
+                          swimsuit nor with geta, Japanese traditional wooden
+                          flipflops.
                         </p>
                         <br />
                         <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
+                          Working and learning coraborratively with a kind of
+                          people that I had never met shocked me at first, but
+                          these experiences taught me how to get along with
+                          those who grew up in completely different
+                          environments. And this initial encounter with external
+                          world led me to leave Japan for a while later on.
                         </p>
                       </span>
                     )
                   },
                   {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
+                    tabButton: "Undergraduate",
+                    tabIcon: FunctionsIcon,
                     tabContent: (
                       <span>
+                        <h3>International Christian University</h3>
+                        2012.04 ~ 2016.06
+                        <h4>B.A, Math Major, Psychology Minor </h4>
+                        <h5></h5>
                         <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
+                          I entered the liberal arts university next to my
+                          highschool, attracted by the phrase "Later
+                          Specialization", since I had no clue about what I want
+                          to learn in my future. While taking some general
+                          education courses, I observed towards which direction
+                          my interest is directed to and decied to major in
+                          math, invited by abstract and beautiful world.
                         </p>
                         <br />
                         <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
+                          From the junior year, I joined the exchange program
+                          and spent 1 academic year in Washington State, U.S.
+                        </p>
+                        <br />
+                        <p>
+                          After I came back, I started to work on my thesis
+                          about topological group. Using mny extra time, I also
+                          enjoyed activities in badminton club.
                         </p>
                       </span>
                     )
                   },
                   {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
+                    tabButton: "PostGraduate",
+                    tabIcon: EqualizerIcon,
                     tabContent: (
                       <span>
+                        <h3>Katholieke Universiteit Leuven</h3>
+                        2017.09 ~ 2019.09
+                        <h4>M.S in Statistics</h4>
                         <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
+                           In this classic university near Brussels in Belgium, I learned statistics, which is
+                           intensely related to math but more practical area for 2 years. 
+                           In specific, I chose "general methodologies of statistics" track from some options 
+                           to learn statistical methods widely.  
                         </p>
                         <br />
                         <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
+                          The program was managed in English so it was quite an international environment. 
+                          While struglling with study, I enjoyed typical Belgium Nightlife with those people when I found time. 
                         </p>
+                        <br />
+                        <p>
+                          In the last semester, I focused on writing the mandatory thesis about non-parametric Bayesian models.
+                        </p>
+
                       </span>
                     )
                   }

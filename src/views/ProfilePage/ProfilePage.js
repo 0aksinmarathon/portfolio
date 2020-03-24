@@ -3,12 +3,13 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/grid";
 // @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
+
+import { Grid } from '@material-ui/core';
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import Button from "components/CustomButtons/Button.js";
@@ -20,22 +21,10 @@ import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/profile_manako.png";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
-
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
-import DevIcon from "devicon-react-svg";
 
 import { Icon, InlineIcon } from "@iconify/react";
 import badmintonIcon from "@iconify/icons-mdi/badminton";
@@ -52,8 +41,10 @@ import InfoArea from "../../components/InfoArea/InfoArea.js";
 
 import SectionPillsVertical1 from "./SectionPillsVertical1.js";
 import Experiences from "./experiences.js";
+import Hobbies from "./hobbies.js";
 
-import CustomLinearProgress from "../../components/CustomLinearProgress/CustomLinearProgress.js";
+
+
 
 const useStyles = makeStyles(styles);
 
@@ -83,8 +74,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Manakoです</h3>
-                    <h6>Engineer見習い</h6>
+                    <h3 className={classes.title}>Manako Shintaro</h3>
+                    <h6>Novice Engineer</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -107,52 +98,11 @@ export default function ProfilePage(props) {
 
             <Experiences/>
 
-            <div className={classes.section}>
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={8}>
-                  <h2 className={classes.title}>Some Talk</h2>
-                  <h5 className={classes.description}>
-                    Some friends of mine tell me that it seems like I{"'"}m not
-                    interested in anything but that{"'"}s not true at all. I am
-                    interested in so many things that the opposite seems to be
-                    true. Following is, not every but a part of my interests.
-                  </h5>
-                </GridItem>
-              </GridContainer>
-              <div>
-                <GridContainer>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Badminton"
-                      description="バドミントンはいいぞ"
-                      icon={badmintonIcon1}
-                      iconColor="info"
-                      vertical
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Piano"
-                      description="下手だけど弾けます"
-                      icon={StraightenIcon}
-                      iconColor="success"
-                      vertical
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Reading"
-                      description="読書も良い、心を豊かにしてくれる"
-                      icon={ImportContactsIcon}
-                      iconColor="danger"
-                      vertical
-                    />
-                  </GridItem>
-                </GridContainer>
-              </div>
-            </div>
             <SectionPillsVertical1 />
-            <div className={classes.section}>
+
+            <Hobbies />
+            
+            {/* <div className={classes.section}>
               <div className={classes.container}>
                 <GridContainer justify="center">
                   <GridItem xs={12} sm={12} md={8}>
@@ -161,19 +111,25 @@ export default function ProfilePage(props) {
                   </GridItem>
                 </GridContainer>
               </div>
-            </div>
+            </div> */}
             <div className={classes.textCenter + " " + classes.sharingArea}>
-              <GridContainer justify="center">
-                <h3> Social Media </h3>
-              </GridContainer>
-              <Button color="twitter">
+              <Grid justify="center" mb={30}>
+                <Grid>
+                <h3> Contact </h3>
+                </Grid>
+                <Grid>
+                <h5>shintaro.manako@gmail.com</h5>
+                </Grid>
+              </Grid>
+              
+              {/* <Button color="twitter">
                 <i className={classes.socials + " fab fa-twitter"} />{" "}
                 0aksinmarathon
               </Button>
               <Button color="github">
                 <i className={classes.socials + " fab fa-github"} />{" "}
                 0aksinmarathon
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
