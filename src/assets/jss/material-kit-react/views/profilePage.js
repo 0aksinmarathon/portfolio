@@ -6,7 +6,7 @@ const profilePageStyle = {
   profile: {
     textAlign: "center",
     "& img": {
-      maxWidth: "160px",
+      maxWidth: "250px",
       width: "100%",
       margin: "0 auto",
       transform: "translate3d(0, -50%, 0)"
@@ -25,10 +25,12 @@ const profilePageStyle = {
   main: {
     background: "#FFFFFF",
     position: "relative",
-    zIndex: "3"
+    zIndex: "3",
+    marginBottom: "80px", 
   },
   mainRaised: {
     margin: "-60px 30px 0px",
+    paddingBottom: "50px",
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
@@ -53,14 +55,14 @@ const profilePageStyle = {
     color: "#999"
   },
   navWrapper: {
-    margin: "20px auto 50px auto",
+    margin: "10px auto 0px auto",
     textAlign: "center"
   },
   textCenter: {
     textAlign: "center"
   },
   section: {
-    padding: "70px 0"
+    padding: "20px 0"
   },
   container: {
     ...container,
